@@ -9,3 +9,8 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+# local project file
+css/
+tmp/
+dist/

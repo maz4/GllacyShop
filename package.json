@@ -1,0 +1,50 @@
+{
+  "name": "gllacy",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
+    "deploy": "npm run build && gh-pages -d dist",
+    "dev": "gulp devServer"
+  },
+  // "pre-commit": [
+    // "stylelint"
+  // ],
+  "author": "MAZ",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.1.0",
+    "browser-sync": "^2.24.6",
+    "css-mqpacker": "^7.0.0",
+    "del": "^3.0.0",
+    "gh-pages": "^1.2.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inject": "^4.3.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.1",
+    "gulp-webp": "^3.0.0",
+    "pre-commit": "^1.2.2",
+    "run-sequence": "^2.2.1",
+    "stylelint": "^9.4.0",
+    "stylelint-config-recommended-scss": "^3.2.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "mustache": "^2.3.1",
+    "normalize.scss": "^0.1.0",
+    "picturefill": "^3.0.2"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "homepage": "",
+  "description": "----"
+}
