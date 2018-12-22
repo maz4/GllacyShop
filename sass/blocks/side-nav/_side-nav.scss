@@ -1,0 +1,47 @@
+.side-nav {
+  display: inline-block;
+  padding-left: 0;
+  padding-top: 1.4rem;
+  margin: 0;
+  vertical-align: top;
+  list-style: none;
+}
+
+.side-nav__item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  color: $font-color-white;
+}
+
+.side-nav__link {
+  display: block;
+  padding-left: 13px;
+  padding-right: 13px;
+  font-size: $font-size-three;
+  line-height: 3.1rem;
+  font-weight: $font-weight-bold;
+  color: $font-color-white;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.side-nav__link:hover {
+  background-color: $white-one;
+  color: $font-color-black-two;
+  border-color: $white-one;
+}
+
+.side-nav__link::after {
+  content:"";
+  display: block;
+  position: relative;
+  bottom: 0.7rem;
+  border-bottom: 0.1rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: $white-one;
+  opacity: 0.4;
+}

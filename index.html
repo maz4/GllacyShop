@@ -7,60 +7,70 @@
   <title>Gllacy Ice Creams</title>
 </head>
 
-<body>
+<body class="body">
   <nav class="menu">
-    <a class="menu__logo" href="#"></a>
-    <ul class="menu__list">
-      <li class="menu__item">
-        <span class="menu__catalogue">Catalogue</span>
-        <ul class="menu__drop">
-          <li class="menu__drop-item menu__drop-item--active"><a href="#">New items</a></li>
-          <li class="menu__drop-item"><a href="#">Creamy</a></li>
-          <li class="menu__drop-item"><a href="#">Sherbet</a></li>
-          <li class="menu__drop-item"><a href="#">Ice fruits</a></li>
-          <li class="menu__drop-item"><a href="#">Melorin</a></li>
+    <img class="menu__logo" src="/img/logo.svg" alt="Gllacy Shop logo">
+    <ul class="side-nav">
+      <li class="side-nav__item">
+        <a class="side-nav__link" href="#">Catalogue</a>
+        <ul class="sub-menu">
+          <li class="sub-menu__item sub-menu__item--bold"><a class="sub-menu__link" href="#">New items</a></li>
+          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Creamy</a></li>
+          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Sherbet</a></li>
+          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Ice fruits</a></li>
+          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Melorin</a></li>
         </ul>
       </li>
-      <li class="menu__item"><a class="menu__link" href="#">Shipping and payment</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="side-nav__item">
+        <a class="side-nav__link" href="#">
+          Shipping and payment
+          <span class="side-nav__link-underline"></span>
+        </a>
+      </li>
+      <li class="side-nav__item">
+        <a class="side-nav__link" href="#">
+          About
+          <span class="side-nav__link-underline"></span>
+        </a>
+      </li>
     </ul>
-    <ul class="menu__user">
-      <li class="menu__expand">
-        <span class="menu__search">Search</span>
-        <form class="menu__form menu__form--search">
-          <label class="menu__label" for="search">Search</label>
-          <input class="menu__input" id="search" name="search" type="text">
+    <ul class="user-menu">
+      <li class="user-menu__item">
+        <a class="user-menu__link user-menu__link--search">Search</a>
+        <form class="user-menu__form user-menu__form--search">
+          <label class="user-menu__label" for="search">Search</label>
+          <input class="user-menu__input" id="search" name="search" type="text">
         </form>
       </li>
-      <li class="menu__expand">
-        <span class="menu__login menu__login--login">Log in</span>
-        <form class="menu__form">
-          <label class="menu__label" for="email">Email</label>
-          <input class="menu__input" id="email" name="email" type="email">
-          <label class="menu__label" for="password">Password</label>
-          <input class="menu__input" id="password" name="password" type="text">
+      <li class="user-menu__item">
+        <a class="user-menu__link menu__login--login">Log in</a>
+        <form class="user-menu__form user-menu__form--login">
+          <label class="user-menu__label" for="email">Email</label>
+          <input class="user-menu__input" id="email" name="email" type="email">
+          <label class="user-menu__label" for="password">Password</label>
+          <input class="user-menu__input" id="password" name="password" type="text">
         </form>
       </li>
-      <li class="menu__expand">
-        <a class="menu__link">Cart</a>
-        <div clas="cart">
-          <div class="cart__product">
-            <img class="cart__img">
-            <p class="cart__name">Ice Cream with Orange Jam</p>
-            <p class="cart__price-kg">1.5 kg x £2.39 .</p>
-            <p class="cart__price">£3.58</p>
-          </div>
-          <div class="cart__product">
-            <img class="cart__img">
-            <p class="cart__name">Strawberry Ice Cream with Powder
-              white chocolate</p>
-            <p class="cart__price-kg">1.5 kg x £3.58</p>
-            <p class="cart__price">£5.37</p>
-          </div>
-          <div class="cart__purches">
-              <p class="cart__total">Total: £8.95</p>
-              <button class="cart__Checkout">Checkout</button>
-            </div>
+      <li class="user-menu__item">
+        <a class="user-menu__link user-menu__link--cart">Cart</a>
+        <ul class="cart">
+          <li class="cart__item">
+            <span class="cart__img"></span>
+            <div class="cart__product">Ice Cream with Orange Jam</div>
+            <div class="cart__price-kg">1.5 kg x £2.39</div>
+            <div class="cart__price">£3.58</div>
+          </li>
+          <li class="cart__item">
+            <span class="cart__img"></span>
+            <div class="cart__product">Strawberry Ice Cream with white chocolate sprinkles</div>
+            <div class="cart__price-kg">1.5 kg x £3.58</div>
+            <div class="cart__price">£5.37</div>
+          </li>
+        </ul>
+        <div class="cart__purches">
+          <p class="cart__total">Total: £8.95</p>
+          <button class="cart__Checkout">Checkout</button>
+        </div>
         </div>
       </li>
     </ul>
