@@ -1,0 +1,181 @@
+.user-menu {
+  display: block;
+  list-style: none;
+  margin: 0;
+  width: 26.1rem;
+  padding-top: 1.4rem;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.user-menu__item {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-left: 0.7rem;
+}
+
+.user-menu__item:hover {}
+
+.user-menu__item:first-child {
+  margin-left: 0;
+}
+
+.user-menu__item--search:hover {
+  padding-bottom: 1rem;
+}
+
+.user-menu__item--login:hover {
+  padding-bottom: 1rem;
+}
+
+.user-menu__link {
+  display: block;
+  height: 3.2rem;
+  margin-top: 0;
+  font-size: $font-size-five;
+  line-height: 3.2rem;
+  font-weight: $font-weight-medium;
+  color: $font-color-white;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.2);
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+}
+
+.user-menu__link:hover {
+  background: $white-two;
+  color: $black-two;
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+}
+
+.user-menu__link--search {
+  width: 3.2rem;
+  background-position: 0.6rem 0.6rem;
+  background-image: url('../img/loupe.svg');
+}
+
+.user-menu__link--search:hover {
+  background-position: 0.6rem 0.6rem;
+  background-image: url('../img/loupe--black.svg')
+}
+
+.user-menu__link--login {
+  padding-left: 4.3rem;
+  width: 4.9rem;
+  background-position: 1.7rem 0.6rem;
+  background-image: url('../img/entrance.svg');
+}
+
+.user-menu__link--login:hover {
+  background-position: 1.7rem 0.6rem;
+  background-image: url('../img/entrance--black.svg');
+}
+
+.user-menu__link--cart {
+  padding-left: 4.4rem;
+  width: 7.3rem;
+  background-position: 1.6rem 0.6rem;
+  background-image: url('../img/basket.svg');
+}
+
+.user-menu__link--cart:hover {
+  background-position: 1.6rem 0.6rem;
+  background-image: url('../img/basket--black.svg');
+}
+
+.user-menu__form {
+  visibility: hidden;
+  display: block;
+  position: absolute;
+  top: 3.7rem;
+  right: 0;
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: $white-two;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.user-menu__form--search {
+  width: 31rem;
+}
+
+.user-menu__form--login {
+  width: 24.5rem;
+}
+
+.user-menu__item:hover>.user-menu__form {
+  visibility: visible;
+}
+
+.user-menu__label {
+  display: block;
+
+  @include hide-text();
+}
+
+.user-menu__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4.4rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-bottom: 2rem;
+  font-size: $font-size-three;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-three;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  border-color: $gray-one;
+  opacity: 0.52;
+}
+
+.user-menu__input::placeholder {
+  font-size: $font-size-five;
+  font-weight: $font-weight-regular;
+}
+
+.user-menu__input:hover {
+  border-width: 0.2rem;
+  border-color: $gray-two;
+}
+
+.user-menu__input:focus {
+  border-width: 0.2rem;
+  border-color: $blue-one;
+  border-radius: 0;
+}
+
+.user-menu__input--search {
+  margin-bottom: 0;
+}
+
+.user-menu__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-menu__button {
+  @include button(4.5rem, 10rem);
+  flex-basis: 10rem;
+}
+
+.user-menu__action {
+  padding-top: 0.4rem;
+  flex-basis: 50%;     
+}
+
+.user-menu__sub-link {
+  display: block;
+  font-size: 13px;
+  color: $black-one;
+}
+.user-menu__sub-link:first-child {
+  margin-bottom: 0.6rem;
+}
