@@ -10,10 +10,28 @@
 .menu__logo {
   display: inline-block;
 }
+
+
+.menu__time {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 72px;
+  right: 18px;
+  font-size: $font-size-five;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-two;
+  color: $font-color-white;
+}
+
 .menu__phone {
   display: block;
   position: absolute;
-  padding-top:30px;
-  bottom: -55px;
-  right: 0;
+  margin: 0;
+  top: 93px;
+  right: 22px;
+  font-size: $font-size-seven;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-three;
+  color: $font-color-white;
 }
