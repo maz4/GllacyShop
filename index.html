@@ -85,16 +85,26 @@
     <p class="menu__phone">8 812 450-25-25</p>
   </nav>
   <main>
-    <section class="intro">
-      <div class="intro__container">
-        <h1 class="intro__header">Creme brulee and raspberry ice cream</h1>
-        <span class="intro__picture intro__picture--left"></span>
-        <span class="intro__picture intro__picture--right"></span>
-        <button>Order!</button>
-        <ul class="intro__slider">
-          <li class="intro__item">button-one</li>
-          <li class="intro__item">button-two</li>
-          <li class="intro__item">button-three</li>
+    <section class="slider">
+      <div class="slider__container">
+        <div class="slider__control">
+          <label for="product-1">first</label>
+          <label for="product-2">second</label>
+          <label for="product-3">third</label>
+        </div>
+        <ul class="slider__list">
+          <li class="slider__item" id="slide1">
+            <h3 class="slider__title">Creme brulee and raspberry ice cream</h3>
+            <a class="slider__button" href="#">Order!</a>
+          </li>
+          <li class="slider__item" id="slide2">
+            <h3 class="slider__title">Chocolate and lemon sorbet ice cream</h3>
+            <a class="slider__button" href="#">Order!</a>
+          </li>
+          <li class="slider__item" id="slide3">
+            <h3 class="slider__title">Sundae with Fudge and strawberry sorbet</h3>
+            <a class="slider__button" href="#">Order!</a>
+          </li>
         </ul>
       </div>
     </section>
