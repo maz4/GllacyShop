@@ -9,36 +9,38 @@
   margin: 0;
   list-style: none;
   box-shadow: 0 2rem 2rem 0 rgba($black-three, 0.4);
+ 
+  background-color: $white-two;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .side-nav__item:hover .sub-menu {
   visibility: visible;
 }
 
-.sub-menu__item {
-  padding-top: 0.9rem;
-  padding-bottom: 0.6rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  background-color: $white-two;
-}
-
-.sub-menu__item:last-child {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  padding-bottom: 1.4rem;
-}
-
 .sub-menu__item--bold {
   font-weight: $font-weight-bold;
-  padding-top: 1rem;
-  padding-bottom: 1.3rem;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
 }
 
 .sub-menu__item:hover {
   background-color: $pink-one;
+}
+
+.sub-menu__item:first-child:hover{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.sub-menu__item:last-child:hover{
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.sub-menu__item:active {
+  background-color: $orange-ten;
 }
 
 .sub-menu__item--bold::after {
@@ -55,7 +57,26 @@
 }
 
 .sub-menu__link {
+  display: block;
   font-size: $font-size-five;
   color: $font-color-black;
   text-decoration: none;
+  width: 71%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.sub-menu__link--active {
+  background-color: $orange-eleven;
+}
+
+.sub-menu__link--bold {
+  padding-top: 1rem;
+  padding-bottom: 1.3rem;
+}
+
+.sub-menu__item:last-child > a {
+  padding-bottom: 1.2rem;
 }
