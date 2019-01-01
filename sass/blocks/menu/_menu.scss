@@ -2,22 +2,24 @@
   display: flex;
   flex-flow: nowrap;
   position: relative;
+  padding-top: 0.9rem;
   padding-left: $padding-900-one;
   padding-right: $padding-900-one;
-  padding-top: 0.9rem;
 }
 
 .menu__logo {
   display: inline-block;
+  flex-basis: 18%;
+  width: 18%;
+  text-decoration: none;
 }
-
 
 .menu__time {
   display: block;
   position: absolute;
   margin: 0;
-  top: 72px;
-  right: 18px;
+  top: 7.2rem;
+  right: 2rem;
   font-size: $font-size-five;
   font-weight: $font-weight-bold;
   line-height: $line-height-two;
@@ -28,8 +30,8 @@
   display: block;
   position: absolute;
   margin: 0;
-  top: 93px;
-  right: 22px;
+  top: 9.3rem;
+  right: 2rem;
   font-size: $font-size-seven;
   font-weight: $font-weight-bold;
   line-height: $line-height-three;

@@ -1,12 +1,13 @@
 .user-menu {
   display: block;
-  list-style: none;
+  flex-basis: 31%;
+  width: 31%;
   margin: 0;
-  width: 26.1rem;
   padding-top: 1.4rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
+  list-style: none;
 }
 
 .user-menu__item {
@@ -15,8 +16,6 @@
   vertical-align: top;
   margin-left: 0.7rem;
 }
-
-.user-menu__item:hover {}
 
 .user-menu__item:first-child {
   margin-left: 0;
@@ -37,9 +36,9 @@
   font-size: $font-size-five;
   line-height: 3.2rem;
   font-weight: $font-weight-medium;
-  color: $font-color-white;
+  color: $font-color-white; 
   border-radius: 2rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba($white-one, 0.2);
   background-size: 2rem 2rem;
   background-repeat: no-repeat;
 }
@@ -99,7 +98,7 @@
   padding-right: 1.5rem;
   border-radius: 0.5rem;
   background-color: $white-two;
-  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2rem 2rem 0 rgba($black-three, 0.4);
 }
 
 .user-menu__form--search {
@@ -110,7 +109,7 @@
   width: 24.5rem;
 }
 
-.user-menu__item:hover>.user-menu__form {
+.user-menu__item:hover > .user-menu__form {
   visibility: visible;
 }
 
