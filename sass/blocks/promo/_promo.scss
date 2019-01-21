@@ -1,0 +1,105 @@
+.promo__container {
+  padding-left: $padding-900-one;
+  padding-right: $padding-900-one;
+  padding-top: 4.1rem;
+  display: flex;
+}
+
+.promo__item {
+  position: relative;
+  flex-basis: 24%;
+  margin-right: 2rem;
+}
+
+.promo__item:last-child {
+  margin-right: 0;
+}
+
+.promo__product {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+}
+
+.promo__picture {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  z-index: 0;
+  border-radius: 100%;
+}
+
+.promo__header {
+  position: absolute;
+  top: 14rem;
+  left: 1rem;
+  margin-bottom: 2.7rem;
+  z-index: 10;
+  font-size: $font-size-nine;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-seven;
+  color: $font-color-white;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(49, 50, 53, 0.5);
+}
+
+.promo__header::after {
+  content: "/kg";
+  font-size: $font-size-ten;
+  line-height: $line-height-seven;
+  color: $font-color-white;
+}
+
+.promo__description {
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: $font-size-three;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-six;
+  color: $font-color-white;
+  text-align: center;
+}
+
+.promo__text {
+  border-bottom: 0.1rem solid $white-three;
+}
+
+.promo__hover {
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  width: 21.5rem;
+  height: 34rem;
+  box-shadow: 0 2rem 2rem 0 rgba($black-three, 0.4);
+  background-color: rgba($white-one, 0.2);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.promo__item:hover>.promo__hover {
+  visibility: visible;
+}
+
+.promo__button {
+  @include button(10px, 15px, $font-size-six);
+  position: absolute;
+  bottom: 2.5rem;
+  left: 4.5rem;
+}
+
+.promo__button:hover {
+  @include button-hover();
+}
+
+.promo__button:active {
+  @include button-active();
+}
