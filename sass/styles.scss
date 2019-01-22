@@ -1,17 +1,12 @@
 //Reset styles for web browsers
 @import "normalize.scss";
-
 @import "variables/variables";
-@import "typography/typography";
 @import "scaffolding/scaffolding";
-
 //mixins
 @import "mixins/mixins";
-
 //Components
 @import "blocks/site-wrapper/site-wrapper";
 @import "blocks/container/container";
-@import "blocks/body/body";
 @import "blocks/menu/menu";
 @import "blocks/side-nav/side-nav";
 @import "blocks/sub-menu/sub-menu";
@@ -21,5 +16,3 @@
 @import "blocks/visually-hidden/visually-hidden";
 @import "blocks/offer/offer";
 @import "blocks/promo/promo";
-
-

@@ -1,4 +1,4 @@
-@mixin button($paddingTB, $paddinLF, $fontSize){
+@mixin button($paddingTB, $paddinLF, $fontSize) {
   display: inline-block;
   vertical-align: middle;
   padding-top: $paddingTB;
@@ -9,10 +9,9 @@
   font-size: $fontSize;
   font-weight: $font-weight-bold;
   color: $font-color-white-two;
-  background-color: $orange-one;
   border: none;
   border-radius: 2rem;
-  background: linear-gradient( 90deg, $orange-two 0%, $orange-three 100%);
-  box-shadow: 0 0.1rem 0.2rem 0 rgba($orange-eight, 1); 
+  background: linear-gradient(90deg, $orange-two 0%, $orange-three 100%);
+  box-shadow: 0 0.1rem 0.2rem 0 rgba($orange-eight, 1);
   cursor: pointer;
 }

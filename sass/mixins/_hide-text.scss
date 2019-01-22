@@ -1,5 +1,7 @@
 @mixin hide-text() {
+  /* stylelint-disable */
   font: 0/0 a;
+  /* stylelint-enable */
   color: transparent;
   text-shadow: none;
   background-color: transparent;

@@ -7,9 +7,9 @@
     "deploy": "npm run build && gh-pages -d dist",
     "dev": "gulp devServer"
   },
-  // "pre-commit": [
-  //   "stylelint"
-  // ],
+  "pre-commit": [
+    "stylelint"
+  ],
   "author": "MAZ",
   "license": "ISC",
   "devDependencies": {
