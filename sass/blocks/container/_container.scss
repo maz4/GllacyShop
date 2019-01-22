@@ -1,0 +1,22 @@
+.container {
+  width: 90rem;
+  margin: 0 auto;
+  background-image: url('../img/icecream-item1_a.png'), url('../img/icecream-item1_b.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 12.7rem 8.3rem, 44.1rem 12.6rem;
+  transition: background-color 0.5s ease;
+}
+
+.container:before,
+.container:after {
+  content: "";
+  visibility: hidden;
+}
+
+.container:before {
+  background-image: url('../img/icecream-item2_a.png'), url('../img/icecream-item2_b.png');
+}
+
+.container:after {
+  background-image: url('../img/icecream-item3_a.png'), url('../img/icecream-item3_b.png');
+}

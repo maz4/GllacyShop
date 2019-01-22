@@ -163,8 +163,15 @@
 }
 
 .user-menu__button {
-  @include button(4.5rem, 10rem);
-  flex-basis: 10rem;
+  @include button(1.3rem, 2.5rem, $font-size-six);
+}
+
+.user-menu__button:hover {
+  @include button-hover;
+}
+
+.user-menu__button:active {
+  @include button-active;
 }
 
 .user-menu__action {
@@ -174,7 +181,7 @@
 
 .user-menu__sub-link {
   display: block;
-  font-size: 13px;
+  font-size: $font-size-four;
   color: $black-one;
 }
 .user-menu__sub-link:first-child {

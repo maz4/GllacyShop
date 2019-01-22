@@ -1,0 +1,100 @@
+.slider__container {
+  position: relative;
+  text-align: center;
+  padding-top: 32rem;
+}
+
+.slider__list {
+  padding: 0;
+  margin: 0;
+}
+.slider__item {
+  list-style: none;
+}
+
+.slider__title {
+  font-size: $font-size-one;
+  color: $font-color-white;
+  line-height: $line-height-four;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.slider__button {
+  @include button(1.3rem, 4rem, $font-size-two);
+  text-decoration: none;
+}
+
+.slider__button:hover {
+  @include button-hover();
+}
+
+.slider__button:active {
+  @include button-active();
+}
+
+.slider__control {
+  position: absolute;
+  bottom: 2.2rem;
+  left: 0;
+  z-index: 20;
+
+  font-size: 0;
+}
+.slider__label {
+  display: inline-block;
+  vertical-align: top;
+  height: 1.7rem;
+  width: 1.7rem;
+  margin-right: 0.8rem;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 0.2rem;
+  border-color: $white-one;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__label:hover {
+  background-color: rgba($white-two, 0.4);
+}
+
+#product-1:checked ~ .site-wrapper > .container #slide-1,
+#product-2:checked ~ .site-wrapper > .container #slide-2,
+#product-3:checked ~ .site-wrapper > .container #slide-3 {
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper > .container label[for="product-1"],
+#product-2:checked ~ .site-wrapper > .container label[for="product-2"],
+#product-3:checked ~ .site-wrapper > .container label[for="product-3"] {
+  background-color: $white-one;
+}
+
+#product-1:checked ~ .site-wrapper > .container {
+  background-image: url('../img/icecream-item1_a.png'), url('../img/icecream-item1_b.png');
+}
+
+#product-2:checked ~ .site-wrapper > .container {
+  background-image: url('../img/icecream-item2_a.png'), url('../img/icecream-item2_b.png');
+  background-position: 12.4rem 8.4rem, 43rem 12.4rem;
+}
+
+#product-3:checked ~ .site-wrapper > .container {
+  background-image: url('../img/icecream-item3_a.png'), url('../img/icecream-item3_b.png');
+  background-position: 12.8rem 8.3rem, 44.1rem 11.9rem;
+}
+
+#product-1:checked ~ .site-wrapper {
+  background-color: $green-one;
+}
+
+#product-2:checked ~ .site-wrapper {
+  background-color: $violet-one;
+}
+
+#product-3:checked ~ .site-wrapper {
+  background-color: $gray-one;
+}
