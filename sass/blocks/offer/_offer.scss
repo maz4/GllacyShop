@@ -1,0 +1,62 @@
+.offer__container {
+  display: flex;
+  padding-top: 3.8rem;
+  padding-left: $padding-900-one;
+  padding-right: $padding-900-one;
+}
+
+.offer__product {
+  display: block;
+  position: relative;
+  flex-basis: 50%;
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding-top: 1.5rem;
+  padding-bottom: 6rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.offer__product:first-child {
+  background-image: url('../img/raspberries.png');
+}
+
+.offer__product:last-child {
+  margin-left: 2rem;
+  background-image: url('../img/chocolate.png');
+}
+
+.offer__header {
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  font-size: $font-size-eight;
+  line-height: $line-height-five;
+  color: $font-color-white;
+}
+
+.offer__description {
+  margin-top: 0;
+  margin-bottom: 2.8rem;
+  font-size: $font-size-six;
+  line-height: $line-height-six;
+  color: $font-color-white;
+}
+
+.offer__button {
+  position: absolute;
+  bottom: 2.2rem;
+  right: 2.2rem;
+  @include button(1.2rem, 2.5rem, $font-size-six);
+}
+
+.offer__button:hover {
+  @include button-hover();
+}
+
+.offer__button:active {
+  @include button-active();
+}
