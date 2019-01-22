@@ -36,7 +36,7 @@
   font-size: $font-size-five;
   line-height: 3.2rem;
   font-weight: $font-weight-medium;
-  color: $font-color-white; 
+  color: $font-color-white;
   border-radius: 2rem;
   background: rgba($white-one, 0.2);
   background-size: 2rem 2rem;
@@ -58,7 +58,7 @@
 
 .user-menu__link--search:hover {
   background-position: 0.6rem 0.6rem;
-  background-image: url('../img/loupe--black.svg')
+  background-image: url('../img/loupe--black.svg');
 }
 
 .user-menu__link--login {
@@ -175,7 +175,7 @@
 
 .user-menu__action {
   padding-top: 0.4rem;
-  flex-basis: 50%;     
+  flex-basis: 50%;
 }
 
 .user-menu__sub-link {
@@ -183,6 +183,7 @@
   font-size: $font-size-four;
   color: $black-one;
 }
+
 .user-menu__sub-link:first-child {
   margin-bottom: 0.6rem;
 }

@@ -38,7 +38,7 @@
   text-decoration: none;
 }
 
-.side-nav__item:hover>.side-nav__link {
+.side-nav__item:hover > .side-nav__link {
   background-color: $white-one;
   color: $font-color-black-two;
   border-color: $white-one;

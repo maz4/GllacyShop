@@ -9,7 +9,6 @@
   margin: 0;
   list-style: none;
   box-shadow: 0 2rem 2rem 0 rgba($black-three, 0.4);
- 
   background-color: $white-two;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
@@ -29,18 +28,18 @@
   background-color: $pink-one;
 }
 
-.sub-menu__item:first-child:hover{
+.sub-menu__item:active {
+  background-color: $orange-ten;
+}
+
+.sub-menu__item:first-child:hover {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
-.sub-menu__item:last-child:hover{
+.sub-menu__item:last-child:hover {
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-}
-
-.sub-menu__item:active {
-  background-color: $orange-ten;
 }
 
 .sub-menu__item--bold::after {

@@ -7,16 +7,16 @@
   transition: background-color 0.5s ease;
 }
 
-.container:before,
-.container:after {
+.container::before,
+.container::after {
   content: "";
   visibility: hidden;
 }
 
-.container:before {
+.container::before {
   background-image: url('../img/icecream-item2_a.png'), url('../img/icecream-item2_b.png');
 }
 
-.container:after {
+.container::after {
   background-image: url('../img/icecream-item3_a.png'), url('../img/icecream-item3_b.png');
 }
