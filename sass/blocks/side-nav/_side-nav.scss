@@ -10,6 +10,7 @@
 .side-nav__item {
   position: relative;
   display: inline-block;
+  padding-bottom: 1.5rem;
   vertical-align: top;
   color: $font-color-white;
 }
@@ -26,7 +27,7 @@
   text-decoration: none;
 }
 
-.side-nav__link:hover {
+.side-nav__item:hover > .side-nav__link {
   background-color: $white-one;
   color: $font-color-black-two;
   border-color: $white-one;
