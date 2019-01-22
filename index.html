@@ -35,25 +35,32 @@
       </li>
     </ul>
     <ul class="user-menu">
-      <li class="user-menu__item">
-        <a class="user-menu__link user-menu__link--search">Search</a>
-        <form class="user-menu__form user-menu__form--search">
+      <li class="user-menu__item user-menu__item--search">
+        <a class="user-menu__link user-menu__link--search"></a>
+        <form class="user-menu__form user-menu__form--search" action="#">
           <label class="user-menu__label" for="search">Search</label>
-          <input class="user-menu__input" id="search" name="search" type="text">
+          <input class="user-menu__input user-menu__input--search" id="search" name="search" type="text" placeholder="What are you looking for?">
         </form>
       </li>
-      <li class="user-menu__item">
-        <a class="user-menu__link menu__login--login">Log in</a>
-        <form class="user-menu__form user-menu__form--login">
+      <li class="user-menu__item user-menu__item--login">
+        <a class="user-menu__link user-menu__link--login">Login</a>
+        <form class="user-menu__form user-menu__form--login" action="#">
           <label class="user-menu__label" for="email">Email</label>
-          <input class="user-menu__input" id="email" name="email" type="email">
+          <input class="user-menu__input" id="email" name="email" type="email" placeholder="Email">
           <label class="user-menu__label" for="password">Password</label>
-          <input class="user-menu__input" id="password" name="password" type="text">
+          <input class="user-menu__input" id="password" name="password" type="text" placeholder="Password">
+          <div class="user-menu__btn-wrapper">
+            <button class="user-menu__button">Log in</button>
+            <div class="user-menu__action">
+              <a class="user-menu__sub-link" href="#">Remind password</a>
+              <a class="user-menu__sub-link" href="#">Register</a>
+            </div>
+          </div>
         </form>
       </li>
-      <li class="user-menu__item">
+      <li class="user-menu__item user-menu__item--cart">
         <a class="user-menu__link user-menu__link--cart">Cart</a>
-        <ul class="cart">
+        <ul class="cart" style="display: none;">
           <li class="cart__item">
             <span class="cart__img"></span>
             <div class="cart__product">Ice Cream with Orange Jam</div>
@@ -67,9 +74,9 @@
             <div class="cart__price">£5.37</div>
           </li>
         </ul>
-        <div class="cart__purches">
+        <div class="cart__purches" style="display: none;">
           <p class="cart__total">Total: £8.95</p>
-          <button class="cart__Checkout">Checkout</button>
+          <button class="cart__Checkout" style="display: none">Checkout</button>
         </div>
         </div>
       </li>
