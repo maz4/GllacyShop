@@ -1,13 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta chasrset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <title Glaccy Ice Creams></title>
-  </head>
-  <body>
-    <nav></nav>
-    <main></main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Gllacy Ice Creams</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <a class="menu__logo" href="#"></a>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <span class="menu__catalogue">Catalogue</span>
+        <ul class="menu__drop">
+          <li class="menu__drop-item menu__drop-item--active"><a href="#">New items</a></li>
+          <li class="menu__drop-item"><a href="#">Creamy</a></li>
+          <li class="menu__drop-item"><a href="#">Sherbet</a></li>
+          <li class="menu__drop-item"><a href="#">Ice fruits</a></li>
+          <li class="menu__drop-item"><a href="#">Melorin</a></li>
+        </ul>
+      </li>
+      <li class="menu__item"><a class="menu__link" href="#">Shipping and payment</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+    </ul>
+    <ul class="menu__user">
+      <li class="menu__expand">
+        <span class="menu__search">Search</span>
+        <form class="menu__form menu__form--search">
+          <label class="menu__label" for="search">Search</label>
+          <input class="menu__input" id="search" name="search" type="text">
+        </form>
+      </li>
+      <li class="menu__expand">
+        <span class="menu__login menu__login--login">Log in</span>
+        <form class="menu__form">
+          <label class="menu__label" for="email">Email</label>
+          <input class="menu__input" id="email" name="email" type="email">
+          <label class="menu__label" for="password">Password</label>
+          <input class="menu__input" id="password" name="password" type="text">
+        </form>
+      </li>
+      <li class="menu__expand">
+        <a class="menu__link">Cart</a>
+        <div clas="cart">
+          <div class="cart__product">
+            <img class="cart__img">
+            <p class="cart__name">Ice Cream with Orange Jam</p>
+            <p class="cart__price-kg">1.5 kg x £2.39 .</p>
+            <p class="cart__price">£3.58</p>
+          </div>
+          <div class="cart__product">
+            <img class="cart__img">
+            <p class="cart__name">Strawberry Ice Cream with Powder
+              white chocolate</p>
+            <p class="cart__price-kg">1.5 kg x £3.58</p>
+            <p class="cart__price">£5.37</p>
+          </div>
+          <div class="cart__purches">
+              <p class="cart__total">Total: £8.95</p>
+              <button class="cart__Checkout">Checkout</button>
+            </div>
+        </div>
+      </li>
+    </ul>
+    <p class="menu__phone">Open from 10 a.m. till 8 p.m. 8 812 450-25-25</p>
+  </nav>
+  <main>
+    <section class="intro">
+      <div class="intro__container">
+        <h1 class="intro__header">Creme brulee and raspberry ice cream</h1>
+        <span class="intro__picture intro__picture--left"></span>
+        <span class="intro__picture intro__picture--right"></span>
+        <button>Order!</button>
+        <ul class="intro__slider">
+          <li class="intro__item">button-one</li>
+          <li class="intro__item">button-two</li>
+          <li class="intro__item">button-three</li>
+        </ul>
+      </div>
+    </section>
+    <section class="ad">
+      <div class="ad__container">
+        <div class="ad__one">
+          <h2 class="ad__header">Raspberry jam for free!</h2>
+          <p class="ad_description">When buying 2 kg of any popsicles, we add to your order a jar of raspberry jam for
+            free.</p>
+          <a class="ad__link">Yes, I want it!</a>
+        </div>
+        <div class="ad__two">
+          <h2 class="ad__header">Chocolates powder for free!</h2>
+          <p class="ad_description">When buying 2 kg of ice cream, we add to your order a package of delicious
+            chocolate
+            chips completely free of charge.</p>
+          <a class="ad__link">Yes, I want them!</a>
+        </div>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="promo__container">
+        <div class="promo__one">
+          <h3 class="promo__header">£3.69/kg</h3>
+          <p class="promo__description">Vanila with orange jam and citrus chips</p>
+        </div>
+        <div class="promo__two">
+          <h3 class="promo__header">£4.52/kg</h3>
+          <p class="promo__description">Coffee with chocolate pieces</p>
+        </div>
+        <div class="promo__three">
+          <h3 class="promo__header">£4.22/kg</h3>
+          <p class="promo__description">Strawberry with white chocolate chips</p>
+        </div>
+        <div class="promo__four">
+          <h3 class="promo__header">£4.99/kg</h3>
+          <p class="promo__description">Creme Brulee with Caramel Sauce</p>
+        </div>
+      </div>
+    </section>
+    <section class="production">
+      <div clsss="production__container">
+        <h3 class="production__header">Glassey Shop is an online store where we sell ice cream produced with our own
+          unique recipe.</h3>
+        <div class="production__item production__item--technique">
+          <p class="production__description">All our ice creama are produced in-house, using modern equipment and
+            proven technologies.</p>
+        </div>
+        <div class="production__item production__item--ingridients">
+          <p class="production__description">For the ice creams preparation we use highest quality cream and milk. All
+            additional ingredients are made from natural, environmentally friendly raw materials.</p>
+        </div>
+        <div class="production__item production__item--quality">
+          <p class="production__description">The ingredients are purchased only from aproved
+            farms and companies.</p>
+        </div>
+        <div class="production__item production__item--delivery">
+          <p class="production__description">Delivery of our ice cream is carried by a special
+            thermal packets, which keep ice creams coll all on the way to you.</p>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog__container">
+        <div class="blog__item blog__item-entry">
+          <h4 class="blog__header">New in blog</h4>
+          <a class="blog__link">10 ways of serving fruit sorbet to the table</a>
+        </div>
+        <div class="blog__item blog__item-subscribe">
+          <p class="blog__text">Sign up for our sweet newsletter
+            and you will always be aware of all the delicious things that are happening here. We promise not to spam
+            and not to send any unnecessary nonsense. Honestly =)</p>
+          <form class="blog__form">
+            <label class="blog__label" for="news-email">email</label>
+            <input class="blog__input" id="news-email" name="news-email" type="email">
+            <button class="blog__button" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__container">
+        <div class="map__info">
+          <h4 class="map__header">Head Office Address:</h4>
+          <p class="map__text">st. Bolshaya Konyushennaya 19/8, St. Petersburg</p>
+          <h4 class="map__header">Phone number for orders:</h4>
+          <p class="map__text">8 812 450-25-25</p>
+          <p class="map__text map__text--small">(call between 10 a.m. ann 8 p.m.)</p>
+          <button>Feedback form</button>
+        </div>
+        <form class="map__form">
+          <h3 class="map__form-header">We will reply to you!</h3>
+          <label class="map__label" for="feedback-name">Name</label>
+          <input class="map__input" id="feedback-name" type="text" placeholder="Name">
+          <label class="map__label" for="feedback-email">Email</label>
+          <input class="map__input" id="feedback-email" type="email" placeholder="Email">
+          <label class="map__input" for="feedback-message">Message</label>
+          <textarea class="map__input" id="feedback-message" type="text"></textarea>
+          <button class="map__button map__button--submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="social">
+      <div class="social__container">
+        <a class="social_link social_link--twitter" href="#">find us on twitter</a>
+        <a class="social_link social_link--instagram" href="#">find us on instagram</a>
+        <a class="social_link social_link--facebook" href="#">find us on facebook</a>
+      </div>
+    </section>
+    <section class="links">
+      <div class="links__container">
+        <a class="links__link" href="#">For Supplier</a>
+        <a class="links__link" href="#">Production</a>
+        <a class="links__link" href="#">Certificates</a>
+        <a class="links__link" href="#">Environmental standards</a>
+      </div>
+    </section>
+    <section class="academy">
+      <div class="academy__container">
+        <a class="academy__logo" href="#"></a>
+        <p class="academy__text">Made in <a class="academy__link" href="#">HTML Academy </a>© 2017</p>
+      </div>
+    </section>
+  </footer>
+</body>
+
 </html>

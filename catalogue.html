@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Gllacy Catalogue</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <a class="menu__logo" href="#"></a>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <span class="menu__catalogue">Catalogue</span>
+        <ul class="menu__drop">
+          <li class="menu__drop-item menu__drop-item--active"><a href="#">New items</a></li>
+          <li class="menu__drop-item"><a href="#">Creamy</a></li>
+          <li class="menu__drop-item"><a href="#">Sherbet</a></li>
+          <li class="menu__drop-item"><a href="#">Ice fruits</a></li>
+          <li class="menu__drop-item"><a href="#">Melorin</a></li>
+        </ul>
+      </li>
+      <li class="menu__item"><a class="menu__link" href="#">Shipping and payment</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+    </ul>
+    <ul class="menu__user">
+      <li class="menu__expand">
+        <span class="menu__search">Search</span>
+        <form class="menu__form menu__form--search">
+          <label class="menu__label" for="search">Search</label>
+          <input class="menu__input" id="search" name="search" type="text">
+        </form>
+      </li>
+      <li class="menu__expand">
+        <span class="menu__login menu__login--login">Log in</span>
+        <form class="menu__form">
+          <label class="menu__label" for="email">Email</label>
+          <input class="menu__input" id="email" name="email" type="email">
+          <label class="menu__label" for="password">Password</label>
+          <input class="menu__input" id="password" name="password" type="text">
+        </form>
+      </li>
+      <li class="menu__expand">
+        <a class="menu__link">Cart</a>
+        <div clas="cart">
+          <div class="cart__product">
+            <img class="cart__img">
+            <p class="cart__name">Ice Cream with Orange Jam</p>
+            <p class="cart__price-kg">1.5 kg x £2.39 .</p>
+            <p class="cart__price">£3.58</p>
+          </div>
+          <div class="cart__product">
+            <img class="cart__img">
+            <p class="cart__name">Strawberry Ice Cream with Powder
+              white chocolate</p>
+            <p class="cart__price-kg">1.5 kg x £3.58</p>
+            <p class="cart__price">£5.37</p>
+          </div>
+          <div class="cart__purches">
+            <p class="cart__total">Total: £8.95</p>
+            <button class="cart__Checkout">Checkout</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <p class="menu__phone">Open from 10 a.m. till 8 p.m. 8 812 450-25-25</p>
+  </nav>
+  <main>
+    <section class="intro">
+      <div class="intro__container">
+        <p class="intro__text">
+          <a class="intro__link" href="#">Home </a>»
+          <a class="intro__link" href="#">Catalog </a> »
+          <a class="intro__link" href="#">Creamy</a>
+        </p>
+        <h1 class="intro__header intro__header--small">Ice creams</h1>
+      </div>
+    </section>
+    <section class="catalogue-search">
+      <form class="catalogue-form">
+        <div class="select-list">
+          <p class="select__name">Sort:</p>
+          <select class="select__list" name="sort-results">
+            <option class="select__item" value="popularity">popularity</option>
+            <option class="select__item" value="price-low">price low to high</option>
+            <option class="select__item" value="dear">first dear</option>
+            <option class="select__item" value="fat">fat content</option>
+          </select>
+        </div>
+        <div class="range">
+          <p class="range__name">Price: <span class="catalogue-form__min-price">£0</span> - <span class="catalogue-form__min-price">£50</span></p>
+          <input class="range__input" type="range" min="0" max="100">
+        </div>
+        <div class="radio">
+          <p class="radio__name">Fat content:</p>
+          <input class="radio__input" name="zero-pct" type="radio">
+          <label class="radio__label" for="zero-pct">0%</label>
+          <input class="radio__input" name="ten-pct" type="radio">
+          <label class="radio__label" for="ten-pct">10%</label>
+          <input class="radio__input" name="up-to-thirty-pct" type="radio">
+          <label class="radio__label" for="up-to-thirty-pct">up to 30%</label>
+          <input class="radio__input" name="above-thirty-pct" type="radio">
+          <label class="radio__label" for="above-thirty-pct">above 30%</label>
+        </div>
+        <div class="checkbox">
+          <p class="checkbox__name">Fillers:</p>
+          <input class="checkbox__input" type="checkbox" name="chocolate">
+          <label class="checkbox__label" for="chocolate">chocolate</label>
+          <input class="checkbox__input" type="checkbox" name="sugar-powders">
+          <label class="checkbox__label" for="sugar-powders">sugar powders</label>
+          <input class="checkbox__input" type="checkbox" name="fruits">
+          <label class="checkbox__label" for="fruits">fruits</label>
+          <input class="checkbox__input" type="checkbox" name="syrups">
+          <label class="checkbox__label" for="syrups">syrups</label>
+          <input class="checkbox__input" type="checkbox" name="jams">
+          <label class="checkbox__label" for="jams">jams</label>
+        </div>
+        <div class="submit">
+          <button class="submit__button" type="submit">Apply</button>
+        </div>
+      </form>
+    </section>
+    <section class="result">
+      <div class="result__container">
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+        <div class="item">
+          <div class="item__img"></div>
+          <h3 class="item__price"></h3>
+          <p class="item__description"></p>
+        </div>
+      </div>
+        <div class="page-number__left-arrow">page back</div>
+        <ul class="page-number__list">
+          <li class="page-number__item">1</li>
+          <li class="page-number__item">2</li>
+          <li class="page-number__item">3</li>
+          <li class="page-number__item">4</li>
+          <li class="page-number__item">5</li>
+        </ul>
+        <div class="page-number__right-arrow">page forward</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="social">
+      <div class="social__container">
+        <a class="social_link social_link--twitter" href="#">find us on twitter</a>
+        <a class="social_link social_link--instagram" href="#">find us on instagram</a>
+        <a class="social_link social_link--facebook" href="#">find us on facebook</a>
+      </div>
+    </section>
+    <section class="links">
+      <div class="links__container">
+        <a class="links__link" href="#">For Supplier</a>
+        <a class="links__link" href="#">Production</a>
+        <a class="links__link" href="#">Certificates</a>
+        <a class="links__link" href="#">Environmental standards</a>
+      </div>
+    </section>
+    <section class="academy">
+      <div class="academy__container">
+        <a class="academy__logo" href="#"></a>
+        <p class="academy__text">Made in <a class="academy__link" href="#">HTML Academy </a>© 2017</p>
+      </div>
+    </section>
+  </footer>
+</body>
+
+</html>
