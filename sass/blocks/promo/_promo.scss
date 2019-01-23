@@ -34,7 +34,7 @@
 .promo__header {
   position: absolute;
   top: 14rem;
-  left: 1rem;
+  left: 0;
   margin-bottom: 2.7rem;
   z-index: 10;
   font-size: $font-size-nine;
@@ -74,15 +74,15 @@
   visibility: hidden;
   position: absolute;
   top: -1rem;
-  left: -1rem;
-  width: 21.5rem;
+  left: -0.9rem;
+  width: 21.8rem;
   height: 34rem;
   box-shadow: 0 2rem 2rem 0 rgba($black-three, 0.4);
   background-color: rgba($white-one, 0.2);
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 }
 
 .promo__item:hover > .promo__hover {
@@ -90,9 +90,9 @@
 }
 
 .promo__button {
-  @include button(10px, 15px, $font-size-six);
+  @include button(1.1rem, 1.5rem, $font-size-six);
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 1.5rem;
   left: 4.5rem;
 }
 
