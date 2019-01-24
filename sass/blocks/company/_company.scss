@@ -1,0 +1,72 @@
+.company__container {
+  padding-left: $padding-900-one;
+  padding-right: $padding-900-one;
+  padding-top: 2.5rem;
+  padding-bottom: 2.2rem;
+  background-image: url('../img/waffle.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.company__header {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2.1rem;
+  font-size: $font-size-eleven;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-eight;
+  color: $font-color-black;
+}
+
+.company__item-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2.3rem;
+}
+
+.company__item {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 9%;
+  margin-bottom: 4.5rem;
+}
+
+.company__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.company__item--technique::before {
+  top: -1.4rem;
+  left: -5.7rem;
+  background-image: url('../img/ice-cream.svg');
+}
+
+.company__item--ingridients::before {
+  top: -1.4rem;
+  left: -5.7rem;
+  background-image: url('../img/eco.svg');
+}
+
+.company__item--quality::before {
+  top: -1.4rem;
+  left: -6rem;
+  background-image: url('../img/cow.svg');
+}
+
+.company__item--delivery::before {
+  top: -1.4rem;
+  left: -6rem;
+  background-image: url('../img/thermometer.svg');
+}
+
+.company__description {
+  font-size: $font-size-three;
+  line-height: $line-height-six;
+  color: $font-color-black;
+}
