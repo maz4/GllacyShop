@@ -18,10 +18,14 @@
   color: $font-color-black;
 }
 
-.company__item-container {
+.company__list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 0;
   padding-bottom: 2.3rem;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 0;
 }
 
 .company__item {
@@ -29,6 +33,7 @@
   position: relative;
   margin-left: 9%;
   margin-bottom: 4.5rem;
+  list-style: none;
 }
 
 .company__item::before {
