@@ -25,7 +25,6 @@
 
 .slider__button {
   @include button(1.3rem, 4rem, $font-size-two);
-  text-decoration: none;
 }
 
 .slider__button:hover {

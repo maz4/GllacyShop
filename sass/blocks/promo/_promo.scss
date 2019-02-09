@@ -1,15 +1,17 @@
-.promo__container {
-  padding-left: $padding-900-one;
-  padding-right: $padding-900-one;
+.promo__list {
+  display: flex;
   padding-top: 4.1rem;
   padding-bottom: 2.3rem;
-  display: flex;
+  padding-left: $padding-900-one;
+  padding-right: $padding-900-one;
+  margin: 0;
 }
 
 .promo__item {
   position: relative;
   flex-basis: 24%;
   margin-right: 2rem;
+  list-style: none;
 }
 
 .promo__item:last-child {

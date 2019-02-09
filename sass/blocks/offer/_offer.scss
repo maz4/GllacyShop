@@ -1,11 +1,13 @@
-.offer__container {
+.offer__list {
   display: flex;
   padding-top: 3.9rem;
+  padding-bottom: 0;
   padding-left: $padding-900-one;
   padding-right: $padding-900-one;
+  margin: 0;
 }
 
-.offer__product {
+.offer__item {
   display: block;
   position: relative;
   flex-basis: 50%;
@@ -19,13 +21,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
+  list-style: none;
 }
 
-.offer__product:first-child {
+.offer__item--one {
   background-image: url('../img/raspberries.png');
 }
 
-.offer__product:last-child {
+.offer__item--two {
   margin-left: 2rem;
   background-image: url('../img/chocolate.png');
 }
