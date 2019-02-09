@@ -19,11 +19,11 @@ const del = require('del');
 const runSequence = require('run-sequence');
 
 var paths = {
-  src: './**/*',
-  srcHTML: './*.html',
-  srcSASS: './sass/**/*.scss',
-  srcJS: './js/*.js',
-  srcIMG: './img/**',
+  src: './src/**/*',
+  srcHTML: './src/*.html',
+  srcSASS: './src/sass/**/*.scss',
+  srcJS: './src/js/*.js',
+  srcIMG: './src/img/**',
 
   tmp: './tmp',
   tmpHTML: './tmp/**/*.html',
@@ -32,19 +32,27 @@ var paths = {
   tmpJS: './tmp/**/*.js',
   tmpJSdest: './tmp/js',
   tmpIMG: './tmp/img',
+
+  dist: './dist',
+  distHTML: './dist/**/*.html',
+  distCSS: './dist/**/*.css',
+  distCSSdest: './dist/css',
+  distJS: './dist/**/*.js',
+  distJSdest: './dist/js',
+  distIMG: './dist/img',
 };
 
 /**
  * DEVELOPMENT
  */
 
- // Copy HTML
+// Copy HTML
 gulp.task('devHTML', function () {
   return gulp.src(paths.srcHTML)
     .pipe(gulp.dest(paths.tmp));
 });
 
-// Copy images
+// Copy and minify images
 gulp.task('devIMG', function () {
   return gulp.src(paths.srcIMG)
     .pipe(plumber())
@@ -53,7 +61,7 @@ gulp.task('devIMG', function () {
     .pipe(gulp.dest(paths.tmpIMG));
 });
 
-// Copy and compile CSS
+// Copy, compile and minify CSS
 gulp.task('devCSS', function () {
   return gulp.src(paths.srcSASS)
     .pipe(plumber())
@@ -70,19 +78,19 @@ gulp.task('devCSS', function () {
     .pipe(browserSync.stream());
 });
 
-// Copy JS
+// Copy and minify JS
 gulp.task('devJS', function () {
   return gulp.src([
-      // './src/js/scroll.js',
-      // './src/js/menu.js',
-      // './src/js/main.js',
+      './src/js/scroll.js',
+      './src/js/menu.js',
+      './src/js/main.js',
     ])
     .pipe(concat('main.js'))
     .pipe(gulp.dest(paths.tmpJSdest))
     .pipe(browserSync.stream());
 });
 
-// Injects CSS and JS paths into HTML // not used in DEV at the moment
+// Injects CSS and JS paths into HTML
 gulp.task('devInject', function () {
   var css = gulp.src(paths.tmpCSS);
   var js = gulp.src(paths.tmpJS);
@@ -106,8 +114,7 @@ gulp.task('devClean', function () {
 
 // Creates development copy
 gulp.task('buildDev', function (done) {
-  // runSequence('devClean', ['devHTML', 'devIMG', 'devCSS', 'devJS'], 'devInject', done);
-  runSequence('devClean', ['devHTML', 'devIMG', 'devCSS', 'devJS'], done);
+  runSequence('devClean', ['devHTML', 'devIMG', 'devCSS', 'devJS'], 'devInject', done);
 });
 
 //  Sets local development server
@@ -119,12 +126,106 @@ gulp.task('devServer', ['buildDev'], function () {
   gulp.watch(paths.srcSASS, ['devCSS']);
   gulp.watch(paths.srcJS, ['devJS']);
   gulp.watch(paths.srcHTML, function () {
-    // runSequence('devHTML', 'devInject', browserSync.reload)
-    runSequence('devHTML', browserSync.reload)
+    runSequence('devHTML', 'devInject', browserSync.reload)
   });
   gulp.watch(paths.srcIMG, ['devIMG']);
 });
 
 /*
  * DEVELOPMENT ENDS
+ */
+
+/*
+ * PRODUCTION
+ */
+
+// Copy HTML
+gulp.task('distHTML', function () {
+  return gulp.src(paths.srcHTML)
+    .pipe(gulp.dest(paths.dist));
+});
+
+// Copy and minify images
+gulp.task('distIMG', function () {
+  return gulp.src(paths.srcIMG)
+    .pipe(plumber())
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{
+        removeViewBox: false
+      }]
+    }))
+    .pipe(gulp.dest(paths.distIMG))
+    .pipe(webp())
+    .pipe(gulp.dest(paths.distIMG));
+});
+
+//Copy, compile and minify CSS
+gulp.task('distCSS', function () {
+  return gulp.src(paths.srcSASS)
+    .pipe(plumber())
+    .pipe(sass({
+        includePaths: path.join(__dirname, '/node_modules/normalize.scss/')
+      })
+      .on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer({
+        browsers: 'last 2 versions'
+      }),
+      MQpacker({
+        sort: false
+      })
+    ]))
+    .pipe(cleanCSS({
+      compatibility: 'ie10'
+    }))
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(paths.distCSSdest));
+});
+
+// Copy and minify JS
+gulp.task('distJS', function () {
+  return gulp.src([
+      './src/js/scroll.js',
+      './src/js/menu.js',
+      './src/js/main.js',
+    ]).pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(paths.distJSdest));
+});
+
+// Injects CSS and JS paths into HTML
+gulp.task('distInject', function () {
+  var css = gulp.src(paths.distCSS);
+  var js = gulp.src(paths.distJS);
+
+  return gulp.src(paths.distHTML)
+    .pipe(inject(css, {
+      relative: true
+    }))
+    .pipe(inject(js, {
+      relative: true
+    }))
+    .pipe(gulp.dest(paths.dist));
+});
+
+// Clean distribution folder
+gulp.task('distClean', function () {
+  return del([
+    'dist/**', '!dist'
+  ]);
+});
+
+// Build distribution
+gulp.task('buildDist', function (done) {
+  runSequence('distClean', ['distHTML', 'distIMG', 'distCSS', 'distJS'], 'distInject', done);
+});
+
+/*
+ * PRODUCTION ENDS
  */
