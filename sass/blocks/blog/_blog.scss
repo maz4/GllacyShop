@@ -1,0 +1,98 @@
+.blog__list {
+  display: flex;
+  padding-left: $padding-900-one;
+  padding-right: $padding-900-one;
+  padding-top: 3.9rem;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.blog__item {
+  display: block;
+  flex-basis: 45%;
+  width: 45%;
+  padding-left: 2rem;
+  padding-right: 3.9rem;
+  margin-right: 2rem;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 1.5rem;
+}
+
+.blog__item:last-child {
+  margin-right: 0;
+}
+
+.blog__item--entry {
+  padding-top: 23px;
+  background-image: url('../img/strawberries.png');
+}
+
+.blog__item--subscribe {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 35px;
+  background-size: 97%, auto;
+  background-position: center, center;
+  background-image: url('../img/pattern-top.png'), url('../img/pattern.png');
+}
+
+.blog__header {
+  margin-bottom: 4px;
+  font-size: $font-size-three;
+  line-height: $line-height-six;
+  color: $font-color-black-three;
+}
+
+.blog__link {
+  font-size: $font-size-eleven;
+  line-height: $line-height-eight;
+  color: $font-color-black-four;
+  background-color: rgba($white-one, 0.8);
+}
+
+.blog__link:hover {
+  color: $font-color-orange;
+}
+
+.blog__link:active {
+  color: $font-color-orange;
+}
+
+.blog__text {
+  font-size: $font-size-three;
+  line-height: $line-height-six;
+  color: $font-color-black-three;
+  margin-bottom: 13px;
+}
+
+.blog__form {
+  display: flex;
+  padding-bottom: 4rem;
+}
+
+.blog__label {
+  display: block;
+
+  @include hide-text();
+}
+
+.blog__input {
+  @include input();
+  display: block;
+}
+
+.blog__button {
+  @include button(10px, 14px, $font-size-six);
+  margin-left: 10px;
+}
+
+.blog__button:hover {
+  @include button-hover();
+}
+
+.blog__button:active {
+  @include button-active();
+}
