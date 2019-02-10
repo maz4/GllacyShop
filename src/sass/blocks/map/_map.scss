@@ -1,0 +1,69 @@
+.map {
+  position: relative;
+  width: 100%;
+  height: 43rem;
+  background-image: url('../img/icecream_marker.svg'), url('../img/map-ru.png');
+  background-position: center, center;
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.map__info {
+  position: absolute;
+  top: 6.3rem;
+  right: 2rem;
+  padding-top: 2.9rem;
+  padding-bottom: 3.3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width: 25.2rem;
+  background-color: $white-one;
+  border-radius: 1.5rem;
+}
+
+.map__address {
+  margin-bottom: 1.8rem;
+}
+
+.map__header {
+  margin-bottom: 0.2rem;
+  font-size: $font-size-five;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-nine;
+  color: $font-color-black;
+}
+
+.map__text {
+  margin-bottom: 0.3rem;
+  font-size: $font-size-six;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-three;
+  color: $font-color-black;
+}
+
+.map__text--small {
+  margin-bottom: 2.7rem;
+  font-size: $font-size-five;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-nine;
+  color: $font-color-black;
+}
+
+.map__button {
+  @include button(1.2rem, 2.7rem, $font-size-six);
+
+  display: block;
+  margin: 0 auto;
+}
+
+.map__button:hover {
+  @include button-hover();
+}
+
+.map__button:active {
+  @include button-active();
+}
+
+.map__button:focus {
+  outline: 0;
+}
