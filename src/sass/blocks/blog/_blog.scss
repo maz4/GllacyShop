@@ -3,7 +3,7 @@
   padding-left: $padding-900-one;
   padding-right: $padding-900-one;
   padding-top: 3.9rem;
-  padding-bottom: 0;
+  padding-bottom: 4rem;
   margin: 0;
 }
 
@@ -26,21 +26,21 @@
 }
 
 .blog__item--entry {
-  padding-top: 23px;
+  padding-top: 2.3rem;
   background-image: url('../img/strawberries.png');
 }
 
 .blog__item--subscribe {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 35px;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+  padding-top: 3.5rem;
   background-size: 97%, auto;
   background-position: center, center;
   background-image: url('../img/pattern-top.png'), url('../img/pattern.png');
 }
 
 .blog__header {
-  margin-bottom: 4px;
+  margin-bottom: 0.4rem;
   font-size: $font-size-three;
   line-height: $line-height-six;
   color: $font-color-black-three;
@@ -65,7 +65,7 @@
   font-size: $font-size-three;
   line-height: $line-height-six;
   color: $font-color-black-three;
-  margin-bottom: 13px;
+  margin-bottom: 1.3rem;
 }
 
 .blog__form {
@@ -85,8 +85,8 @@
 }
 
 .blog__button {
-  @include button(10px, 14px, $font-size-six);
-  margin-left: 10px;
+  @include button(1rem, 1.4rem, $font-size-six);
+  margin-left: 1rem;
 }
 
 .blog__button:hover {
