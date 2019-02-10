@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Gllacy Ice Creams</title>
+</head>
+
+<body class="body">
+  <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+  <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  <div class="site-wrapper">
+    <div class="container">
+      <nav class="menu">
+        <a class="menu__logo" href="#">
+          <img class="menu__img" src="/img/logo.svg" alt="Gllacy Shop logo">
+        </a>
+        <ul class="side-nav">
+          <li class="side-nav__item">
+            <a class="side-nav__link side-nav__link--hov" href="./catalogue.html">Catalogue</a>
+            <ul class="sub-menu">
+              <li class="sub-menu__item sub-menu__item--bold"><a class="sub-menu__link sub-menu__link--bold" href="#">New
+                  items</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Creamy</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Sherbet</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Ice fruits</a></li>
+              <li class="sub-menu__item"><a class="sub-menu__link" href="#">Melorin</a></li>
+            </ul>
+          </li>
+          <li class="side-nav__item">
+            <a class="side-nav__link" href="#">
+              Shipping and payment
+              <span class="side-nav__link-underline"></span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a class="side-nav__link" href="#">
+              About
+              <span class="side-nav__link-underline"></span>
+            </a>
+          </li>
+        </ul>
+        <ul class="user-menu">
+          <li class="user-menu__item user-menu__item--search">
+            <a class="user-menu__link user-menu__link--search"></a>
+            <form class="user-menu__form user-menu__form--search" action="#">
+              <label class="user-menu__label" for="search">Search</label>
+              <input class="user-menu__input user-menu__input--search" id="search" name="search" type="text"
+                placeholder="What are you looking for?">
+            </form>
+          </li>
+          <li class="user-menu__item user-menu__item--login">
+            <a class="user-menu__link user-menu__link--login">Login</a>
+            <form class="user-menu__form user-menu__form--login" action="#">
+              <label class="user-menu__label" for="email">Email</label>
+              <input class="user-menu__input" id="email" name="email" type="email" placeholder="Email">
+              <label class="user-menu__label" for="password">Password</label>
+              <input class="user-menu__input" id="password" name="password" type="text" placeholder="Password">
+              <div class="user-menu__btn-wrapper">
+                <button class="user-menu__button">Log in</button>
+                <div class="user-menu__action">
+                  <a class="user-menu__sub-link" href="#">Remind password</a>
+                  <a class="user-menu__sub-link" href="#">Register</a>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="user-menu__item user-menu__item--cart">
+            <a class="user-menu__link user-menu__link--cart">Cart</a>
+            <ul class="cart" style="display: none;">
+              <li class="cart__item">
+                <span class="cart__img"></span>
+                <div class="cart__product">Ice Cream with Orange Jam</div>
+                <div class="cart__price-kg">1.5 kg x £2.39</div>
+                <div class="cart__price">£3.58</div>
+              </li>
+              <li class="cart__item">
+                <span class="cart__img"></span>
+                <div class="cart__product">Strawberry Ice Cream with white chocolate sprinkles</div>
+                <div class="cart__price-kg">1.5 kg x £3.58</div>
+                <div class="cart__price">£5.37</div>
+              </li>
+            </ul>
+            <div class="cart__purches" style="display: none;">
+              <p class="cart__total">Total: £8.95</p>
+              <button class="cart__Checkout" style="display: none">Checkout</button>
+            </div>
+          </li>
+        </ul>
+        <p class="menu__time">Open from 10 a.m. till 8 p.m.</p>
+        <p class="menu__phone">8 812 450-25-25</p>
+      </nav>
+      <main>
+        <section class="slider">
+          <div class="slider__container">
+            <div class="slider__control">
+              <label class="slider__label" for="product-1">first</label>
+              <label class="slider__label" for="product-2">second</label>
+              <label class="slider__label" for="product-3">third</label>
+            </div>
+            <ul class="slider__list">
+              <li class="slider__item slide" id="slide-1">
+                <h3 class="slider__title">Creme brulee and raspberry ice cream</h3>
+                <button class="slider__button" href="#">Order!</button>
+              </li>
+              <li class="slider__item slide" id="slide-2">
+                <h3 class="slider__title">Chocolate and lemon sorbet ice cream</h3>
+                <button class="slider__button" href="#">Order!</button>
+              </li>
+              <li class="slider__item slide" id="slide-3">
+                <h3 class="slider__title">Sundae with Fudge and strawberry sorbet</h3>
+                <button class="slider__button" href="#">Order!</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="offer">
+          <ul class="offer__list">
+            <li class="offer__item offer__item--one">
+              <h2 class="offer__header">Free raspberry jam!</h2>
+              <p class="offer__description">When buying 2 kg of any popsicles, we add to your order a jar of raspberry
+                jam for free.</p>
+              <button class="offer__button" href="#">Yes, I want it!</button>
+            </li>
+            <li class="offer__item offer__item--two">
+              <h2 class="offer__header">Free choco powder!</h2>
+              <p class="offer__description">When buying 2 kg of ice cream, we add to your order a package of delicious
+                chocolate chips completely free of charge.</p>
+              <button class="offer__button" href="#">Yes, I want it!</button>
+            </li>
+          </ul>
+        </section>
+        <section class="promo">
+          <ul class="promo__list">
+            <li class="promo__item">
+              <div class="promo__product">
+                <img class="promo__picture" src="img/1.png">
+                <h3 class="promo__header">£3.69</h3>
+                <p class="promo__description"><span class="promo__text">Vanila with orange jam and citrus chips</span></p>
+              </div>
+              <div class="promo__hover">
+                <button class="promo__button">Quick look</button>
+              </div>
+            </li>
+            <li class="promo__item">
+              <div class="promo__product">
+                <img class="promo__picture" src="img/2.png">
+                <h3 class="promo__header">£4.52</h3>
+                <p class="promo__description"><span class="promo__text">Coffee with chocolate pieces</span></p>
+              </div>
+              <div class="promo__hover">
+                <button class="promo__button">Quick look</button>
+              </div>
+            </li>
+            <li class="promo__item">
+              <div class="promo__product">
+                <img class="promo__picture" src="img/3.png">
+                <h3 class="promo__header">£4.22</h3>
+                <p class="promo__description"><span class="promo__text">Strawberry with white chocolate chips</span></p>
+              </div>
+              <div class="promo__hover">
+                <button class="promo__button">Quick look</button>
+              </div>
+            </li>
+            <li class="promo__item">
+              <div class="promo__product">
+                <img class="promo__picture" src="img/4.png">
+                <h3 class="promo__header">£4.99</h3>
+                <p class="promo__description"><span class="promo__text">Creme Brulee with Caramel Sauce</span></p>
+              </div>
+              <div class="promo__hover">
+                <button class="promo__button">Quick look</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="company">
+          <div class="company__container">
+            <h3 class="company__header">Glassey Shop is an online store where we sell ice cream produced with our
+              own unique recipe.</h3>
+            <ul class="company__list">
+              <li class="company__item company__item--technique">
+                <p class="company__description">All our ice creama are produced
+                  in-house, using modern equipment and
+                  proven technologies.</p>
+              </li>
+              <li class="company__item company__item--quality">
+                <p class="company__description">The ingredients are purchased only from
+                  aproved farms and companies.</p>
+              </li>
+              <li class="company__item company__item--ingridients">
+                <p class="company__description">For the ice creams preparation we use
+                  highest quality cream and milk.
+                  All additional ingredients are made from natural, environmentally friendly raw materials.</p>
+              </li>
+              <li class="company__item company__item--delivery">
+                <p class="company__description">Delivery of our ice cream is carried by
+                  a special thermal packets, which keep ice creams coll all on the way to you.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="blog">
+          <ul class="blog__list">
+            <li class="blog__item blog__item--entry">
+              <h4 class="blog__header">New in blog</h4>
+              <a class="blog__link" href="#">10 ways of serving fruit sorbets</a>
+            </li>
+            <li class="blog__item blog__item--subscribe">
+              <p class="blog__text">Sign up for our sweet newsletter
+                and you will always be aware of all the delicious things that are happening here. We promise not to
+                spam and not to send any unnecessary nonsense. Honestly =)</p>
+              <form class="blog__form">
+                <label class="blog__label" for="subscribe-email">email</label>
+                <input class="blog__input" id="subscribe-email" name="news-email" type="email">
+                <button class="blog__button" type="submit">Subscribe</button>
+              </form>
+            </li>
+          </ul>
+        </section>
+        <section class="map">
+          <div class="map__info">
+            <div class="map__address">
+              <h4 class="map__header">Head Office Address:</h4>
+              <p class="map__text">st. Bolshaya Konyushennaya 19/8, St. Petersburg</p>
+            </div>
+            <div class="map__phone">
+              <h4 class="map__header">Phone number for orders:</h4>
+              <p class="map__text">8 812 450-25-25</p>
+              <p class="map__text map__text--small">(call between 10 a.m. and 8 p.m.)</p>
+            </div>
+            <button class="map__button">Feedback form</button>
+          </div>
+        </section>
+        <section class="contact">
+          <h3 class="contact__header">We will reply to your feedback!</h3>
+          <button class="contact__close"><svg class="contact__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+              viewBox="0 0 18 17">
+              <path d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z" /></svg><span
+              class="contact__close-text">Close feedback</span> </button>
+          <form class="contact__form">
+            <label class="contact__label" for="feedback-name">Name</label>
+            <input class="contact__input" id="feedback-name" type="text" placeholder="Name">
+            <label class="contact__label" for="feedback-email">Email</label>
+            <input class="contact__input" id="feedback-email" type="email" placeholder="Email">
+            <label class="contact__label" for="feedback-message">Message</label>
+            <textarea class="contact__input contact__input--text-area" id="feedback-message" type="text" placeholder="Write something..."></textarea>
+            <button class="contact__button contact__button--submit" type="submit">Submit</button>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <section class="social">
+          <ul class="social__list">
+            <li class="social__item"><a class="social__link social__link--twitter" href="#">find us on twitter</a></li>
+            <li class="social__item"><a class="social__link social__link--instagram" href="#">find us on instagram</a></li>
+            <li class="social__item"><a class="social__link social__link--facebook" href="#">find us on facebook</a></li>
+            <li class="social__item"><a class="social__link social__link--vk" href="#">find us on facebook</a></li>
+          </ul>
+        </section>
+        <section class="quick-access">
+          <ul class="quick-access__list">
+            <li class="quick-access__item">
+              <a class="quick-access__link quick-access__link--bold" href="#">For Suppliers
+                <svg class="quick-access__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+                  <path d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z" />
+                </svg>
+              </a>
+            </li>
+            <li class="quick-access__item"><a class="quick-access__link" href="#">Production</a></li>
+            <li class="quick-access__item"><a class="quick-access__link" href="#">Certificates</a></li>
+            <li class="quick-access__item"><a class="quick-access__link" href="#">Environmental standards</a></li>
+          </ul>
+        </section>
+        <section class="academy">
+          <div class="academy__container">
+            <a class="academy__logo" href="#"></a>
+            <p class="academy__text">Made in <a class="academy__link" href="#">HTML Academy </a>© 2017</p>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </div>
+</body>
+
+</html>
