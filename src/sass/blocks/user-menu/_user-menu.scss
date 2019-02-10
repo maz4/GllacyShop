@@ -134,6 +134,7 @@
   border-radius: 0.5rem;
   border-color: $gray-one;
   opacity: 0.52;
+  outline: 0;
 }
 
 .user-menu__input::placeholder {
@@ -149,7 +150,7 @@
 .user-menu__input:focus {
   border-width: 0.2rem;
   border-color: $blue-one;
-  border-radius: 0;
+  border-radius: 0.5rem;
 }
 
 .user-menu__input--search {

@@ -235,14 +235,18 @@
           </div>
         </section>
         <section class="contact">
+          <h3 class="contact__header">We will reply to your feedback!</h3>
+          <button class="contact__close"><svg class="contact__svg" xmlns="http://www.w3.org/2000/svg" width="18" height="17"
+              viewBox="0 0 18 17">
+              <path d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z" /></svg><span
+              class="contact__close-text">Close feedback</span> </button>
           <form class="contact__form">
-            <h3 class="contact__form-header">We will reply to you!</h3>
             <label class="contact__label" for="feedback-name">Name</label>
             <input class="contact__input" id="feedback-name" type="text" placeholder="Name">
             <label class="contact__label" for="feedback-email">Email</label>
             <input class="contact__input" id="feedback-email" type="email" placeholder="Email">
-            <label class="contact__input" for="feedback-message">Message</label>
-            <textarea class="contact__input" id="feedback-message" type="text"></textarea>
+            <label class="contact__label" for="feedback-message">Message</label>
+            <textarea class="contact__input contact__input--text-area" id="feedback-message" type="text" placeholder="Write something..."></textarea>
             <button class="contact__button contact__button--submit" type="submit">Submit</button>
           </form>
         </section>

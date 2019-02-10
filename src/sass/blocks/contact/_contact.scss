@@ -1,0 +1,111 @@
+.contact {
+  visibility: hidden;
+  position: absolute;
+  top: 33rem;
+  left: 21rem;
+  padding-top: 2rem;
+  padding-bottom: 9rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width: 45rem;
+  background-color: $white-two;
+  border-radius: 1.5rem;
+}
+
+.contact__header {
+  margin-bottom: 2.5rem;
+  font-size: $font-size-eleven;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-ten;
+  color: $font-color-black;
+}
+
+.contact__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  padding: 0;
+  margin: 0;
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+}
+
+.contact__svg {
+  fill: $black-four;
+}
+
+.contact__close:hover~.contact__svg {
+  fill: $orange-one;
+}
+
+.contact__close:active~.contact__svg {
+  fill: $orange-one;
+}
+
+.contact__label {
+  display: block;
+
+  @include hide-text();
+}
+
+.contact__close-text {
+  @include hide-text();
+}
+
+.contact__input {
+  box-sizing: border-box;
+  width: 26rem;
+  height: 4.4rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin-bottom: 2rem;
+  font-size: $font-size-three;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-three;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-radius: 0.5rem;
+  border-color: $gray-one;
+  opacity: 0.52;
+}
+
+.contact__input--text-area {
+  width: 100%;
+  min-height: 15rem;
+  resize: none;
+}
+
+.contact__input::placeholder {
+  font-size: $font-size-five;
+  font-weight: $font-weight-regular;
+}
+
+.contact__input:hover {
+  border-width: 0.2rem;
+  border-color: $gray-two;
+}
+
+.contact__input:focus {
+  border-width: 0.2rem;
+  border-color: $blue-one;
+  border-radius: 0.5rem;
+}
+
+.contact__button {
+  position: absolute;
+  bottom: 3rem;
+  right: 2.5rem;
+
+  @include button(1.2rem, 2.5rem, $font-size-six);
+}
+
+.contact__button:hover {
+  @include button-hover();
+}
+
+.constact__button:active {
+  @include button-active();
+}
