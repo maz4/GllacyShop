@@ -1,8 +1,7 @@
 .social {
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  flex-basis: 33.3%;
-  width: 33.3%;
+  padding-top: 3.6rem;
+  flex-basis: 32%;
+  width: 32%;
 }
 
 .social__list {
@@ -12,18 +11,21 @@
 }
 
 .social__item {
-  flex-basis: 14%;
+  flex-basis: 3.2rem;
+  width: 3.2rem;
   display: block;
-  margin-right: 1.2rem;
+  margin-right: 1.1rem;
   list-style: none;
-  background-color: rgba($white-one, 0.5);
   border-radius: 50%;
+  border-color: rgba($white-one, 0.5);
+  border-width: 0.3rem;
+  border-style: solid;
 }
 
 .social__link {
   display: block;
-  width: 4rem;
-  height: 4rem;
+  width: 3.2rem;
+  height: 3.2rem;
   background-size: 3.2rem 3.2rem;
   background-repeat: no-repeat;
   background-position: center;

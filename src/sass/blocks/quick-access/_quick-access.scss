@@ -1,0 +1,56 @@
+.quick-access {
+  flex-basis: 44%;
+  width: 44%;
+  padding-top: 3.4rem;
+}
+
+.quick-access__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-access__item {
+  position: relative;
+  flex-basis: 39%;
+  padding-bottom: 0.4rem;
+  width: 39%;
+  list-style: none;
+}
+
+.quick-access__link {
+  position: relative;
+  font-size: $font-size-four;
+  line-height: $line-height-one;
+  color: $font-color-white;
+}
+
+.quick-access__link--bold {
+  font-weight: $font-weight-bold;
+}
+
+.quick-access__link:hover {
+  color: $font-color-orange-two;
+}
+
+.quick-access__link:active {
+  color: $font-color-orange-two;
+}
+
+.quick-access__icon {
+  position: absolute;
+  top: 1px;
+  left: -1.8rem;
+  height: 1.4rem;
+  width: 1.4rem;
+  fill: $font-color-white;
+}
+
+.quick-access__link:hover >.quick-access__icon {
+  fill: $font-color-orange-two;
+}
+
+.quick-access__link:active >.quick-access__icon {
+  fill: $font-color-orange-two;
+}
