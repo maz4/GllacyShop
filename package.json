@@ -5,8 +5,11 @@
   "scripts": {
     "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
     "deploy": "npm run build && gh-pages -d dist",
-    "dev": "gulp devServer"
+    "dev": "gulp devServer",
+    "start" : "npm run dev",
+    "build": "gulp buildDist"
   },
+
   "pre-commit": [
     "stylelint"
   ],
