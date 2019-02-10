@@ -15,6 +15,7 @@
   position: relative;
   vertical-align: top;
   margin-left: 0.7rem;
+  cursor: pointer;
 }
 
 .user-menu__item:first-child {
@@ -183,6 +184,14 @@
   display: block;
   font-size: $font-size-four;
   color: $black-one;
+}
+
+.user-menu__sub-link:hover {
+  color: $font-color-orange;
+}
+
+.user-menu__sub-link:active {
+  color: $font-color-orange;
 }
 
 .user-menu__sub-link:first-child {
