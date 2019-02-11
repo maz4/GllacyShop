@@ -1,0 +1,38 @@
+.academy {
+  flex-basis: 24%;
+  width: 24%;
+  padding-top: 1.9rem;
+}
+
+.academy__logo-link {
+  display: block;
+  width: 10.7rem;
+  height: 3.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.academy__svg {
+  fill: $white-one;
+}
+
+.academy__svg:hover {
+  fill: $orange-twelve;
+}
+
+.academy__text {
+  font-size: $font-size-twelve;
+  color: $font-color-white-two;
+}
+
+.academy__link {
+  font-size: $font-size-twelve;
+  color: $font-color-white-two;
+}
+
+.academy__link:hover {
+  color: $font-color-orange-two;
+}
+
+.academy__link:active {
+  color: $font-color-orange-two;
+}

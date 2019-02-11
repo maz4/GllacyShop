@@ -1,7 +1,8 @@
 .quick-access {
-  flex-basis: 44%;
-  width: 44%;
+  flex-basis: 50%;
+  width: 50%;
   padding-top: 3.4rem;
+  padding-left: 2.2rem;
 }
 
 .quick-access__list {
@@ -13,9 +14,9 @@
 
 .quick-access__item {
   position: relative;
-  flex-basis: 39%;
+  flex-basis: 37%;
+  width: 37%;
   padding-bottom: 0.4rem;
-  width: 39%;
   list-style: none;
 }
 
@@ -40,7 +41,7 @@
 
 .quick-access__icon {
   position: absolute;
-  top: 1px;
+  top: 0.1rem;
   left: -1.8rem;
   height: 1.4rem;
   width: 1.4rem;
