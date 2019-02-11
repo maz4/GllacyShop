@@ -1,4 +1,4 @@
 @mixin button-active() {
-  background-image: linear-gradient(90deg, $orange-six 0%, $orange-seven 100%);
-  box-shadow: 0 0.2rem 0.5rem 0 rgba($orange-nine, 0.76);
+  background: linear-gradient(90deg, $orange-six 0%, $orange-seven 100%);
+  box-shadow: inset 0 0.2rem 0.5rem 0 rgba($orange-nine, 0.76);
 }
