@@ -110,7 +110,8 @@
   width: 24.5rem;
 }
 
-.user-menu__item:hover > .user-menu__form {
+.user-menu__item:hover > .user-menu__form, 
+.user-menu__item:focus-within  > .user-menu__form {
   visibility: visible;
 }
 

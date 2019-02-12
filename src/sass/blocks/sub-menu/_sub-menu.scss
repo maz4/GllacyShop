@@ -16,7 +16,8 @@
   border-bottom-right-radius: 0.5rem;
 }
 
-.side-nav__item:hover .sub-menu {
+.side-nav__item:hover > .sub-menu, 
+.side-nav__item:focus-within > .sub-menu {
   visibility: visible;
 }
 
