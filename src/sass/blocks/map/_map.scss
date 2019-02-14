@@ -63,7 +63,3 @@
 .map__button:active {
   @include button-active();
 }
-
-.map__button:focus {
-  outline: 0;
-}
