@@ -3,3 +3,9 @@
   min-width: 90rem;
   background-color: $green-one;
 }
+
+@include screen-size(120rem){
+  .site-wrapper {
+    min-width: 120rem;
+  }
+}

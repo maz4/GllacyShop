@@ -20,3 +20,9 @@
 .container::after {
   background-image: url('../img/icecream-item3_a.png'), url('../img/icecream-item3_b.png');
 }
+
+@include screen-size(120rem) {
+  .container {
+    width: 120rem;
+  }
+}
