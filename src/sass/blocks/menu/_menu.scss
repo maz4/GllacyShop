@@ -1,6 +1,7 @@
 .menu {
   display: flex;
   flex-flow: nowrap;
+  justify-content: space-between;
   position: relative;
   padding-top: 0.9rem;
   padding-left: $padding-900-one;
@@ -9,8 +10,8 @@
 
 .menu__logo {
   display: inline-block;
-  flex-basis: 18%;
-  width: 18%;
+  flex-basis: 16rem;
+  width: 16rem;
   text-decoration: none;
 }
 
