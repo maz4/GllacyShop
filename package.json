@@ -6,10 +6,9 @@
     "stylelint": "stylelint \"sass/**/*.scss\" --syntax scss",
     "deploy": "npm run build && gh-pages -d dist",
     "dev": "gulp devServer",
-    "start" : "npm run dev",
+    "start": "npm run dev",
     "build": "gulp buildDist"
   },
-
   "pre-commit": [
     "stylelint"
   ],
@@ -42,6 +41,7 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
+    "gulp-install": "^1.1.0",
     "mustache": "^2.3.1",
     "normalize.scss": "^0.1.0",
     "picturefill": "^3.0.2"

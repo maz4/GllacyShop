@@ -1,5 +1,6 @@
 .container {
-  width: 90rem;
+  min-width: $screen-900;
+  max-width: $screen-1200;
   margin: 0 auto;
   background-image: url('../img/icecream-item1_a.png'), url('../img/icecream-item1_b.png');
   background-repeat: no-repeat, no-repeat;
