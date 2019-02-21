@@ -22,6 +22,7 @@
   background-position: center;
   background-size: cover;
   list-style: none;
+  border-radius: 1.5rem;
 }
 
 .offer__item--one {
@@ -63,4 +64,10 @@
 
 .offer__button:active {
   @include button-active();
+}
+
+@include screen-size($screen-1200) {
+  .offer__item {
+    padding-bottom: 8.3rem;
+  }
 }
