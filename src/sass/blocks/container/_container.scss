@@ -2,9 +2,9 @@
   min-width: $screen-900;
   max-width: $screen-1200;
   margin: 0 auto;
-  background-image: url('../img/icecream-item1_a.png'), url('../img/icecream-item1_b.png');
-  background-repeat: no-repeat, no-repeat;
-  background-position: 12.7rem 8.3rem, 44.1rem 12.6rem;
+  background-image: url('../img/IceCream1.png');
+  background-repeat: no-repeat;
+  background-position: 50% 8.3rem;
   transition: background-color 0.5s ease;
 }
 
@@ -15,9 +15,9 @@
 }
 
 .container::before {
-  background-image: url('../img/icecream-item2_a.png'), url('../img/icecream-item2_b.png');
+  background-image: url('../img/IceCream2.png');
 }
 
 .container::after {
-  background-image: url('../img/icecream-item3_a.png'), url('../img/icecream-item3_b.png');
+  background-image: url('../img/IceCream3.png');
 }

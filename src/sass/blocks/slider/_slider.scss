@@ -10,7 +10,9 @@
 }
 
 .slider__item {
+  width: 67rem;
   list-style: none;
+  margin: 0 auto;
 }
 
 .slider__title {
@@ -75,17 +77,17 @@
 }
 
 #product-1:checked ~ .site-wrapper > .container {
-  background-image: url('../img/icecream-item1_a.png'), url('../img/icecream-item1_b.png');
+  background-image: url('../img/IceCream1.png');
 }
 
 #product-2:checked ~ .site-wrapper > .container {
-  background-image: url('../img/icecream-item2_a.png'), url('../img/icecream-item2_b.png');
-  background-position: 12.4rem 8.4rem, 43rem 12.4rem;
+  background-image: url('../img/IceCream2.png');
+  background-position: 50% 8.4rem;
 }
 
 #product-3:checked ~ .site-wrapper > .container {
-  background-image: url('../img/icecream-item3_a.png'), url('../img/icecream-item3_b.png');
-  background-position: 12.8rem 8.3rem, 44.1rem 11.9rem;
+  background-image: url('../img/IceCream3.png');
+  background-position: 50% 8.3rem;
 }
 
 #product-1:checked ~ .site-wrapper {
