@@ -38,7 +38,6 @@
   position: absolute;
   top: 14rem;
   left: 0;
-  margin-bottom: 2.7rem;
   z-index: 10;
   font-size: $font-size-nine;
   font-weight: $font-weight-bold;
@@ -77,27 +76,27 @@
   visibility: hidden;
   position: absolute;
   top: -1rem;
-  left: -0.9rem;
-  width: 21.8rem;
-  height: 34rem;
+  left: -1rem;
+  width: 109%;
+  height: 125%;
   box-shadow: 0 2rem 2rem 0 rgba($black-three, 0.4);
   background-color: rgba($white-one, 0.2);
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 
-.promo__item:hover > .promo__hover, 
-.promo__item:focus-within > .promo__hover {
+.promo__item:hover>.promo__hover,
+.promo__item:focus-within>.promo__hover {
   visibility: visible;
 }
 
 .promo__button {
   @include button(1.1rem, 1.5rem, $font-size-six);
+  display: block;
   position: absolute;
   bottom: 1.5rem;
-  left: 4.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
 }
 
 .promo__button:hover {
@@ -106,4 +105,33 @@
 
 .promo__button:active {
   @include button-active();
+}
+
+@include screen-size($screen-1200){
+  .promo__list {
+    padding-bottom: 2.4rem;
+  }
+
+  .promo__picture {
+    margin-bottom: 0.8rem;
+  }
+
+  .promo__header {
+    top: 21rem;
+  }
+
+.promo__description {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+  .promo__hover {
+    top: -0.4rem;
+    width: 107.5%;
+    height: 121%;
+  }
+
+  .promo__button {
+    bottom: 2.2rem;
+  }
 }
