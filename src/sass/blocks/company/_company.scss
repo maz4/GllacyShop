@@ -1,11 +1,15 @@
-.company__container {
+.company {
   padding-left: $padding-900-one;
   padding-right: $padding-900-one;
+}
+
+.company__container {
   padding-top: 2.5rem;
-  padding-bottom: 2.2rem;
   background-image: url('../img/waffle.png');
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1.5rem;
 }
 
 .company__header {
@@ -22,7 +26,6 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 0;
-  padding-bottom: 2.3rem;
   padding-right: 0;
   padding-left: 0;
   margin: 0;
@@ -32,7 +35,7 @@
   flex-basis: 40%;
   position: relative;
   margin-left: 9%;
-  margin-bottom: 4.5rem;
+  margin-bottom: 2.3rem;
   list-style: none;
 }
 
@@ -74,4 +77,11 @@
   font-size: $font-size-three;
   line-height: $line-height-six;
   color: $font-color-black;
+}
+
+@include screen-size($screen-1200) {
+  .company__item {
+    flex-basis: 43%;
+    margin-left: 6.5%;
+  }
 }
