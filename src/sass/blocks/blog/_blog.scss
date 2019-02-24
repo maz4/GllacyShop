@@ -1,5 +1,6 @@
 .blog__list {
   display: flex;
+  justify-content: space-between;
   padding-left: $padding-900-one;
   padding-right: $padding-900-one;
   padding-top: 3.9rem;
@@ -9,11 +10,10 @@
 
 .blog__item {
   display: block;
-  flex-basis: 45%;
-  width: 45%;
+  flex-basis: 43%;
+  width: 43%;
   padding-left: 2rem;
   padding-right: 3.9rem;
-  margin-right: 2rem;
   list-style: none;
   background-repeat: no-repeat;
   background-position: center;
@@ -31,13 +31,16 @@
 }
 
 .blog__item--subscribe {
+  position: relative;
+  z-index: 10;
   padding-left: 2.4rem;
   padding-right: 2.4rem;
   padding-top: 3.5rem;
-  background-size: 97%, auto;
-  background-position: center, center;
-  background-image: url('../img/pattern-top.png'), url('../img/pattern.png');
+  background-size: 100%;
+  background-image: url('../img/pattern-900.png');
 }
+
+
 
 .blog__header {
   margin-bottom: 0.4rem;
@@ -95,4 +98,22 @@
 
 .blog__button:active {
   @include button-active();
+}
+
+@include screen-size($screen-1200) {
+  .blog__list {
+    padding-top: 4.1rem;
+  }
+
+  .blog__text {
+    margin-bottom: 3.5rem;
+  }
+
+  .blog__item--entry {
+    background-image: url('../img/strawberries-1200.png');
+  }
+
+  .blog__item--subscribe {
+    background-image: url('../img/pattern-1200.png');
+  }
 }
