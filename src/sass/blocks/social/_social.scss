@@ -1,7 +1,7 @@
 .social {
   padding-top: 3.6rem;
-  flex-basis: 32%;
-  width: 32%;
+  flex-basis: 30%;
+  width: 30%;
 }
 
 .social__list {
@@ -49,11 +49,18 @@
 .social__link--instagram {
   background-image: url('../img/instagram.svg');
 }
+
 .social__link--facebook {
   background-image: url('../img/fb.svg');
 }
+
 .social__link--vk {
   background-image: url('../img/vk.svg');
 }
 
-
+@include screen-size($screen-1200) {
+  .social {
+    flex-basis: 35%;
+    width: 35%;
+  }
+}

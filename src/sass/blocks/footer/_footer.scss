@@ -4,3 +4,10 @@
   padding-left: 2%;
   padding-right: 2%;
 }
+
+@include screen-size($screen-1200) {
+  .footer {
+    padding-left: 2.25%;
+    padding-right: 2.25%;
+  }
+}
