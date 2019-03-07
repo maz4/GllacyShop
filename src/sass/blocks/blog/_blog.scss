@@ -10,8 +10,8 @@
 
 .blog__item {
   display: block;
-  flex-basis: 43%;
-  width: 43%;
+  flex-basis: 42%;
+  width: 42%;
   padding-left: 2rem;
   padding-right: 3.9rem;
   list-style: none;
@@ -34,7 +34,7 @@
   position: relative;
   z-index: 10;
   padding-left: 2.4rem;
-  padding-right: 2.4rem;
+  padding-right: 3.4rem;
   padding-top: 3.5rem;
   background-size: 100%;
   background-image: url('../img/pattern-900.png');
@@ -107,6 +107,11 @@
 
   .blog__text {
     margin-bottom: 3.5rem;
+  }
+
+  .blog__item {
+    flex-basis: 44%;
+    width: 44%;
   }
 
   .blog__item--entry {

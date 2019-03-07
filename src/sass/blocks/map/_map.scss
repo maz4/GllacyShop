@@ -3,7 +3,7 @@
   width: 100%;
   height: 43rem;
   background-image: url('../img/pin.svg'), url('../img/map-ru.png');
-  background-position: 18.5rem 14rem, center;
+  background-position: 23.7% 14rem, center;
   background-size: 8rem, cover;
   background-repeat: no-repeat, no-repeat;
 }
@@ -62,4 +62,15 @@
 
 .map__button:active {
   @include button-active();
+}
+
+@include screen-size($screen-1200) {
+  .map {
+    background-position: 23.7% 13.8rem, center;
+  }
+
+  .map__info {
+    top: 6.2rem;
+    right: 2.8rem;
+  }
 }
