@@ -1,6 +1,6 @@
 .quick-access {
-  flex-basis: 50%;
-  width: 50%;
+  flex-basis: 45%;
+  width: 45%;
   padding-top: 3.4rem;
   padding-left: 2.2rem;
 }
@@ -48,10 +48,17 @@
   fill: $font-color-white;
 }
 
-.quick-access__link:hover >.quick-access__icon {
+.quick-access__link:hover>.quick-access__icon {
   fill: $font-color-orange-two;
 }
 
-.quick-access__link:active >.quick-access__icon {
+.quick-access__link:active>.quick-access__icon {
   fill: $font-color-orange-two;
+}
+
+@include screen-size($screen-1200) {
+  .quick-access {
+    flex-basis: 34%;
+    width: 34%;
+  }
 }

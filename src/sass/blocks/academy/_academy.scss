@@ -1,7 +1,13 @@
 .academy {
-  flex-basis: 24%;
-  width: 24%;
+  position: relative;
+  flex-basis: 22%;
+  width: 22%;
   padding-top: 1.9rem;
+}
+
+.academy__container {
+  position: absolute;
+  right: 1.2rem;
 }
 
 .academy__logo-link {
@@ -35,4 +41,14 @@
 
 .academy__link:active {
   color: $font-color-orange-two;
+}
+
+@include screen-size($screen-1200) {
+  .academy {
+    flex-basis: 29%;
+  }
+
+  .academy__container {
+    right: 1.3rem;
+  }
 }
