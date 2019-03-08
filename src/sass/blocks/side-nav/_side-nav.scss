@@ -57,3 +57,11 @@
   border-color: $white-one;
   opacity: 0.4;
 }
+
+.side-nav__link--active {
+  background-color: $orange-eleven;
+}
+
+.side-nav__link--active::after {
+  display: none;
+}
