@@ -2,22 +2,26 @@
   min-width: $screen-900;
   max-width: $screen-1200;
   margin: 0 auto;
+}
+
+.container__index {
   background-image: url('../img/IceCream1.png');
   background-repeat: no-repeat;
   background-position: 50% 8.3rem;
   transition: background-color 0.5s ease;
+  
 }
 
-.container::before,
-.container::after {
+.container__index::before,
+.container__index::after {
   content: "";
   visibility: hidden;
 }
 
-.container::before {
+.container__index::before {
   background-image: url('../img/IceCream2.png');
 }
 
-.container::after {
+.container__index::after {
   background-image: url('../img/IceCream3.png');
 }
