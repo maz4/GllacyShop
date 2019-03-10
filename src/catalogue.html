@@ -106,47 +106,49 @@
             <h1 class="intro__header intro__header--small">Ice creams</h1>
           </div>
         </section>
-        <section class="catalogue-search">
-          <form class="catalogue-form">
-            <div class="select-list">
-              <p class="select__name">Sort:</p>
-              <select class="select__list" name="sort-results">
-                <option class="select__item" value="popularity">popularity</option>
-                <option class="select__item" value="price-low">price low to high</option>
-                <option class="select__item" value="dear">first dear</option>
-                <option class="select__item" value="fat">fat content</option>
-              </select>
+        <section class="filter">
+          <form class="filter__form">
+            <div class="filter__category">
+              <p class="filter__name">Sort:</p>
+              <div class="filter__list">
+                <select class="filter__select" name="sort-results">
+                  <option class="filter__item" value="popularity">popularity</option>
+                  <option class="filter__item" value="price-low">price low to high</option>
+                  <option class="filter__item" value="dear">first dear</option>
+                  <option class="filter__item" value="fat">fat content</option>
+                </select>
+              </div>
             </div>
             <div class="range">
-              <p class="range__name">Price: <span class="catalogue-form__min-price">£0</span> - <span class="catalogue-form__min-price">£50</span></p>
+              <p class="range__name">Price: <span class="filter-form__min-price">£0</span> - <span class="filter-form__min-price">£50</span></p>
               <input class="range__input" type="range" min="0" max="100">
             </div>
-            <div class="radio">
-              <p class="radio__name">Fat content:</p>
-              <input class="radio__input" name="zero-pct" type="radio">
-              <label class="radio__label" for="zero-pct">0%</label>
-              <input class="radio__input" name="ten-pct" type="radio">
-              <label class="radio__label" for="ten-pct">10%</label>
-              <input class="radio__input" name="up-to-thirty-pct" type="radio">
-              <label class="radio__label" for="up-to-thirty-pct">up to 30%</label>
-              <input class="radio__input" name="above-thirty-pct" type="radio">
-              <label class="radio__label" for="above-thirty-pct">above 30%</label>
+            <div class="filter__radio">
+              <p class="filter__name">Fat content:</p>
+              <input class="filter__radio-input" name="zero-pct" type="radio">
+              <label class="filter__radio-label" for="zero-pct">0%</label>
+              <input class="filter__radio-input" name="ten-pct" type="radio">
+              <label class="filter__radio-label" for="ten-pct">10%</label>
+              <input class="filter__radio-input" name="up-to-thirty-pct" type="radio">
+              <label class="filter__radio-label" for="up-to-thirty-pct">up to 30%</label>
+              <input class="filter__radio-input" name="above-thirty-pct" type="radio">
+              <label class="filter__radio-label" for="above-thirty-pct">above 30%</label>
             </div>
-            <div class="checkbox">
-              <p class="checkbox__name">Fillers:</p>
-              <input class="checkbox__input" type="checkbox" name="chocolate">
-              <label class="checkbox__label" for="chocolate">chocolate</label>
-              <input class="checkbox__input" type="checkbox" name="sugar-powders">
-              <label class="checkbox__label" for="sugar-powders">sugar powders</label>
-              <input class="checkbox__input" type="checkbox" name="fruits">
-              <label class="checkbox__label" for="fruits">fruits</label>
-              <input class="checkbox__input" type="checkbox" name="syrups">
-              <label class="checkbox__label" for="syrups">syrups</label>
-              <input class="checkbox__input" type="checkbox" name="jams">
-              <label class="checkbox__label" for="jams">jams</label>
+            <div class="filter__checkbox">
+              <p class="filter__name">Fillers:</p>
+              <input class="filter__checkbox-input" type="checkbox" name="chocolate">
+              <label class="filter__checkbox-label" for="chocolate">chocolate</label>
+              <input class="filter__checkbox-input" type="checkbox" name="sugar-powders">
+              <label class="filter__checkbox-label" for="sugar-powders">sugar powders</label>
+              <input class="filter__checkbox-input" type="checkbox" name="fruits">
+              <label class="filter__checkbox-label" for="fruits">fruits</label>
+              <input class="filter__checkbox-input" type="checkbox" name="syrups">
+              <label class="filter__checkbox-label" for="syrups">syrups</label>
+              <input class="filter__checkbox-input" type="checkbox" name="jams">
+              <label class="filter__checkbox-label" for="jams">jams</label>
             </div>
-            <div class="submit">
-              <button class="submit__button" type="submit">Apply</button>
+            <div class="filter__submit">
+              <button class="filter__button" type="submit">Apply</button>
             </div>
           </form>
         </section>
