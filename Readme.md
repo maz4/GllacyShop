@@ -1,4 +1,4 @@
-# Glaccy Ice cream shop
+# Gllacy Ice cream shop
 
 [Gllacy website link - https://maz4.github.io/GllacyShop](https://maz4.github.io/GllacyShop/)
 
